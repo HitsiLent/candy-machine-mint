@@ -42,6 +42,7 @@ function ProductHero(props) {
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
         Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
       </Typography>
+      {props.children}
       <Button
         color="secondary"
         variant="contained"

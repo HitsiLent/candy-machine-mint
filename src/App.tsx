@@ -1,3 +1,18 @@
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import theme from './modules/theme';
+// --- Post bootstrap -----
+import React from 'react';
+import ProductCategories from './modules/views/ProductCategories';
+import ProductSmokingHero from './modules/views/ProductSmokingHero';
+import AppFooter from './modules/views/AppFooter';
+import ProductHero from './modules/views/ProductHero';
+import ProductValues from './modules/views/ProductValues';
+import ProductHowItWorks from './modules/views/ProductHowItWorks';
+import ProductCTA from './modules/views/ProductCTA';
+import AppAppBar from './modules/views/AppAppBar';
+
+
 import "./App.css";
 import { useMemo } from "react";
 
@@ -20,7 +35,6 @@ import {
 } from "@solana/wallet-adapter-react";
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-import { createTheme, ThemeProvider } from "@material-ui/core";
 
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
@@ -43,62 +57,51 @@ const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 
 const txTimeout = 30000; // milliseconds (confirm this works for your project)
 
-const theme = createTheme({
-    palette: {
-        type: 'dark',
-    },
-    overrides: {
-        MuiButtonBase: {
-            root: {
-                justifyContent: 'flex-start',
-            },
-        },
-        MuiButton: {
-            root: {
-                textTransform: undefined,
-                padding: '12px 16px',
-            },
-            startIcon: {
-                marginRight: 8,
-            },
-            endIcon: {
-                marginLeft: 8,
-            },
-        },
-    },
-});
-
 const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
 
   const wallets = useMemo(
     () => [
-        getPhantomWallet(),
-        getSlopeWallet(),
-        getSolflareWallet(),
-        getSolletWallet({ network }),
-        getSolletExtensionWallet({ network })
+      getPhantomWallet(),
+      getSlopeWallet(),
+      getSolflareWallet(),
+      getSolletWallet({ network }),
+      getSolletExtensionWallet({ network })
     ],
     []
   );
 
   return (
-      <ThemeProvider theme={theme}>
-        <ConnectionProvider endpoint={endpoint}>
-          <WalletProvider wallets={wallets} autoConnect={true}>
-            <WalletDialogProvider>
-              <Home
-                candyMachineId={candyMachineId}
-                config={config}
-                connection={connection}
-                startDate={startDateSeed}
-                treasury={treasury}
-                txTimeout={txTimeout}
-              />
-            </WalletDialogProvider>
-          </WalletProvider>
-        </ConnectionProvider>
-      </ThemeProvider>
+    <ConnectionProvider endpoint={endpoint}>
+      <WalletProvider wallets={wallets} autoConnect={true}>
+        <WalletDialogProvider>
+          <ThemeProvider theme={theme}>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <React.Fragment>
+              <AppAppBar />
+              <ProductHero>
+                <Home
+                  candyMachineId={candyMachineId}
+                  config={config}
+                  connection={connection}
+                  startDate={startDateSeed}
+                  treasury={treasury}
+                  txTimeout={txTimeout}
+                />
+              </ProductHero>
+              <ProductValues />
+              <ProductCategories />
+              <ProductHowItWorks />
+              <ProductCTA />
+              <ProductSmokingHero />
+              <AppFooter />
+            </React.Fragment>
+          </ThemeProvider>
+
+        </WalletDialogProvider>
+      </WalletProvider>
+    </ConnectionProvider>
   );
 };
 
