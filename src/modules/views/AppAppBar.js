@@ -42,7 +42,6 @@ function AppAppBar(props) {
     <div>
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
-          <div className={classes.left} />
           <Link
             variant="h6"
             underline="none"
@@ -50,25 +49,44 @@ function AppAppBar(props) {
             className={classes.title}
             href="/premium-themes/onepirate/"
           >
-            {'onepirate'}
+            <img src="/static/candy/logo.png" height="60" alt="" />
           </Link>
-          <div className={classes.right}>
+          <div className={classes.left}>
             <Link
               color="inherit"
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              href="#"
             >
-              {'Sign In'}
+              {'About'}
+            </Link>
+            <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              className={classes.rightLink}
+              href="#"
+            >
+              {'Faq'}
+            </Link>
+            <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              className={classes.rightLink}
+              href="#"
+            >
+              {'Roadmap'}
             </Link>
             <Link
               variant="h6"
               underline="none"
-              className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
+              className={classes.rightLink}
+              // className={clsx(classes.rightLink, classes.linkSecondary)}
+              href="#"
             >
-              {'Sign Up'}
+              {'Store'}
             </Link>
           </div>
         </Toolbar>

@@ -5,7 +5,10 @@ import theme from './modules/theme';
 import React from 'react';
 import ProductCategories from './modules/views/ProductCategories';
 import ProductSmokingHero from './modules/views/ProductSmokingHero';
-import AppFooter from './modules/views/AppFooter';
+import AppFooter from './modules/views/CandyFooter';
+import CandyMainContent10 from './modules/views/CandyMainContent10'
+import CandyMainContent8 from './modules/views/CandyMainContent8'
+import CandyMainContent from './modules/views/CandyMainContent'
 import ProductHero from './modules/views/ProductHero';
 import ProductValues from './modules/views/ProductValues';
 import ProductHowItWorks from './modules/views/ProductHowItWorks';
@@ -80,7 +83,7 @@ const App = () => {
             <CssBaseline />
             <React.Fragment>
               <AppAppBar />
-              <ProductHero>
+              {/* <ProductHero>
                 <Home
                   candyMachineId={candyMachineId}
                   config={config}
@@ -90,11 +93,23 @@ const App = () => {
                   txTimeout={txTimeout}
                 />
               </ProductHero>
-              <ProductValues />
-              <ProductCategories />
-              <ProductHowItWorks />
-              <ProductCTA />
-              <ProductSmokingHero />
+              <ProductValues /> */}
+              {/* <ProductCategories /> */}
+              {/* <ProductHowItWorks /> */}
+              {/* <ProductCTA /> */}
+              {/* <ProductSmokingHero /> */}
+              <CandyMainContent>
+                <Home
+                  candyMachineId={candyMachineId}
+                  config={config}
+                  connection={connection}
+                  startDate={startDateSeed}
+                  treasury={treasury}
+                  txTimeout={txTimeout}
+                />
+              </CandyMainContent>
+              <CandyMainContent8 />
+              <CandyMainContent10 />
               <AppFooter />
             </React.Fragment>
           </ThemeProvider>

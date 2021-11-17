@@ -181,7 +181,19 @@ const Home = (props: HomeProps) => {
 
       <MintContainer>
         {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton
+            color="secondary"
+            variant="contained"
+            size="large"
+            style={{
+              color: "black",
+              border: '4px solid currentColor',
+              borderRadius: 0,
+              height: 'auto',
+              marginTop: "-40px",
+              backgroundColor: "yellow",
+              padding: "2 5",
+            }}>Connect Wallet</ConnectButton>
         ) : (
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}

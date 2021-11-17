@@ -3,6 +3,11 @@ import { green, grey, red } from '@material-ui/core/colors';
 
 const rawTheme = createTheme({
   palette: {
+    doodoo:{
+      lavender: "#ebe5e7",
+      light:"#ffc5c4",
+      lightskyblue:"#97e0fd"
+    },
     primary: {
       light: '#69696a',
       main: '#28282a',
@@ -29,12 +34,12 @@ const rawTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'Work Sans', sans-serif",
+    fontFamily: "'Poppins', sans-serif",
     fontSize: 14,
     fontWeightLight: 300, // Work Sans
     fontWeightRegular: 400, // Work Sans
     fontWeightMedium: 700, // Roboto Condensed
-    fontFamilySecondary: "'Roboto Condensed', sans-serif",
+    fontFamilySecondary: "'Poppins', sans-serif",
   },
 });
 
@@ -91,6 +96,7 @@ const theme = {
     },
     subtitle1: {
       ...rawTheme.typography.subtitle1,
+      fontFamily: "'Roboto Mono', sans-serif",
       fontSize: 18,
     },
     body1: {
