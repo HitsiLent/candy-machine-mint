@@ -8,6 +8,8 @@ import ProductSmokingHero from './modules/views/ProductSmokingHero';
 import AppFooter from './modules/views/CandyFooter';
 import CandyMainContent10 from './modules/views/CandyMainContent10'
 import CandyMainContent8 from './modules/views/CandyMainContent8'
+import CandyMainContent6 from './modules/views/CandyMainContent6'
+import CandyMainContent4 from './modules/views/CandyMainContent4'
 import CandyMainContent from './modules/views/CandyMainContent'
 import ProductHero from './modules/views/ProductHero';
 import ProductValues from './modules/views/ProductValues';
@@ -108,6 +110,8 @@ const App = () => {
                   txTimeout={txTimeout}
                 />
               </CandyMainContent>
+              <CandyMainContent6 />
+              <CandyMainContent4 />
               <CandyMainContent8 />
               <CandyMainContent10 />
               <AppFooter />
