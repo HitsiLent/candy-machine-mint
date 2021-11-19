@@ -57,10 +57,10 @@ export default function CandyMainContent6() {
       <Container className={classes.container}>
         <Grid container spacing={5}>
           <Grid item xs={6} sm={8} md={6} style={{ alignSelf: "center" }}>
-            <Typography variant="h4" component="span">What are Cool Cats?
+            <Typography variant="h4" component="span">What are Doo Doos?
             </Typography>
             <Typography variant="subtitle1" >
-              Cool Cats are a collection of programmatically, randomly generated NFTs on the Ethereum blockchain. The 1st generation consists of 10,000 randomly assembled cats from over 300k total options. Cool Cats that have a variety of outfits, faces and colors - all cats are cool, but completed outfit cats are the coolest. Each Cool Cat is comprised of a unique body, hat, face and outfit - the possibilities are endless!
+              Doo Doos are a collection of programmatically, randomly generated NFTs on the Solana blockchain. The 1st generation consists of 5,000 randomly assembled doodles from over 500k total options. Doo Doo that have a variety of outfits, faces and colors - all doo doos are cool, but completed outfit doo doo are the coolest. Each Doo Doo is comprised of a unique body, hat, face and outfit - the possibilities are endless!
             </Typography>
           </Grid>
           <Grid item xs={6} sm={8} md={6}>

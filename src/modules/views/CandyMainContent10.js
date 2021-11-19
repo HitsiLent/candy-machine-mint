@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="https://doodoonft.com/">
+        Doo Doo
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -80,26 +80,22 @@ export default function CandyMainContent10() {
       <Container className={classes.container}>
         <Grid container spacing={5}>
           <Grid item>
-            <Typography variant="h4" component="span">Cool Cat Live Stream!</Typography>
-            <Typography variant="subtitle1" >Tune into Clon on Wednesday at 1PM EST and catch some live Cool Cat illustration community collaboration session (https://www.twitch.tv/cloncast)</Typography>
+            <Typography variant="h4" component="span">Phase 1</Typography>
+            <Typography variant="subtitle1" >Prepare Merch store and Generate 5000 DooDoo NFT</Typography>
           </Grid ><Grid item>
-            <Typography variant="h4" component="span">Launch Gen 1 Cool Cats</Typography>
-            <Typography variant="subtitle1" >On July 1, we’re going live baby!!!</Typography>
+            <Typography variant="h4" component="span">Phase 2</Typography>
+            <Typography variant="subtitle1" >Launch DooDoo NFT and Drop our Merch Store after NFT launch</Typography>
           </Grid ><Grid item>
-            <Typography variant="h4" component="span">Monthly Exclusive NFT Kickoff</Typography>
-            <Typography variant="subtitle1" >Cool Cat holders will have a chance to claim a limited edition, custom Cool Cat NFT each month, there might even be collabs!</Typography>
+            <Typography variant="h4" component="span">Phase 3</Typography>
+            <Typography variant="subtitle1" >400 Pieces(Hoodie/Tshirt/Hat/Joggers/Sweater) Will randomly drop to Minter (Color/Size NotGurantee)</Typography>
           </Grid ><Grid item>
-            <Typography variant="h4" component="span">First Community ETH Raffle</Typography>
-            <Typography variant="subtitle1" >Once we sell out 50% of Cool Cats we’ll be doing a community exclusive raffle to win some Ethereum!</Typography>
+            <Typography variant="h4" component="span">Phase 4</Typography>
+            <Typography variant="subtitle1" >More collection Merch will be designed and sell on our website, and will be looking for other projects to collab some merchs</Typography>
           </Grid ><Grid item>
-            <Typography variant="h4" component="span">Second Community ETH Raffle</Typography>
-            <Typography variant="subtitle1" >Once we sell out 100% of Cool Cats we’ll be doing a community exclusive raffle to win some more Ethereum!</Typography>
-          </Grid ><Grid item>
-            <Typography variant="h4" component="span">Merch Store & Giveaway!</Typography >
-            <Typography variant="subtitle1" >What better way to rep Cool Cats IRL than a sick ass shirt?? And of course, we’ll be giving away some goodies with this launch</Typography>
-          </Grid ><Grid item>
-            <Typography variant="h4" component="span">Gen 2 | Breeding </Typography >
-            <Typography variant="subtitle1" >Once we launch Gen 1, we can work with the community to determine the BEST way to implement breeding for next Gen!</Typography>
+            <Typography variant="h4" component="span">Phase 5</Typography>
+            <Typography variant="subtitle1" >Donate merch & funds to charity spread the ❤️
+              ALL holder will get 20% off of our merch store
+              Every new collection released, we will do giveaway to the community</Typography>
           </Grid >
         </Grid >
       </Container >

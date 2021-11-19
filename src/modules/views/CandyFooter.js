@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="https://doodoonft.com/">
+        Doo Doo
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -98,11 +98,11 @@ export default function CandyFooter() {
             </Grid>
           </Grid>
           <Grid item xs={6} sm={4} md={4}>
-            <Grid item className={classes.icons} style={{justifyContent:"center"}}>
-              <a href="https://material-ui.com/" className={classes.icon}>
+            <Grid item className={classes.icons} style={{ justifyContent: "center" }}>
+              <a href="https://facebook.com/doodoonft" className={classes.icon}>
                 <img src="/static/themes/onepirate/appFooterFacebook.png" alt="Facebook" />
               </a>
-              <a href="https://twitter.com/MaterialUI" className={classes.icon}>
+              <a href="https://twitter.com/doodoonft" className={classes.icon}>
                 <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />
               </a>
             </Grid>
