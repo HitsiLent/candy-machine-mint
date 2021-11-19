@@ -68,45 +68,45 @@ export default function CandyMainContent10() {
     <Typography component="section" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h1" component="span">FAQ</Typography>
           </Grid >
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">When is the mint date?</Typography>
             <Typography variant="subtitle1" >TBA, sometime in November</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">How many DooDoo NFT will be sold?</Typography>
             <Typography variant="subtitle1" >5000 DooDoos</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Will it be any marketplaces?</Typography>
             <Typography variant="subtitle1" >Yes, we will try to list on ME,DE,AA</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">What is Mint Price?</Typography>
             <Typography variant="subtitle1" >Mint Price will be 0.5 Sol</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">What's DooDoo?</Typography>
             <Typography variant="subtitle1" >DooDoo is our Streetwear brand name.</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">What's different than other projects?</Typography>
             <Typography variant="subtitle1" >We are streetwear based NFT, We will launch our merchant store right after the mint. and some of the merch is already in production and will be delivered on November. 400 pieces includes Hoodie/Sweater/T-shirt/Joggers/cat will give away to minters. All Holders will have 20% off on our merchant store.</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">What Solana Wallets can I use?</Typography>
             <Typography variant="subtitle1" >We will be using Phantom wallet for the website connection.</Typography>
           </Grid >
 
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">What’s an NFT?</Typography>
             <Typography variant="subtitle1" >An NFT stands for “Non-fungible token” and it’s a unique, one of a kind digital item that users can buy, own, and trade.</Typography>
           </Grid >
