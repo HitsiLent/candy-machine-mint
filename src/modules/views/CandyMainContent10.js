@@ -79,19 +79,23 @@ export default function CandyMainContent10() {
     <Typography component="section" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 1</Typography>
             <Typography variant="subtitle1" >Prepare Merch store and Generate 5000 DooDoo NFT</Typography>
-          </Grid ><Grid item>
+          </Grid >
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 2</Typography>
             <Typography variant="subtitle1" >Launch DooDoo NFT and Drop our Merch Store after NFT launch</Typography>
-          </Grid ><Grid item>
+          </Grid >
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 3</Typography>
             <Typography variant="subtitle1" >400 Pieces(Hoodie/Tshirt/Hat/Joggers/Sweater) Will randomly drop to Minter (Color/Size NotGurantee)</Typography>
-          </Grid ><Grid item>
+          </Grid >
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 4</Typography>
             <Typography variant="subtitle1" >More collection Merch will be designed and sell on our website, and will be looking for other projects to collab some merchs</Typography>
-          </Grid ><Grid item>
+          </Grid >
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 5</Typography>
             <Typography variant="subtitle1" >Donate merch & funds to charity spread the ❤️
               ALL holder will get 20% off of our merch store
