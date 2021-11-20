@@ -98,7 +98,7 @@ export default function CandyMainContent10() {
 
           <Grid item xs={12}>
             <Typography variant="h4" component="span">What's different than other projects?</Typography>
-            <Typography variant="subtitle1" >We are streetwear based NFT, We will launch our merchant store right after the mint. and some of the merch is already in production and will be delivered on November. 400 pieces includes Hoodie/Sweater/T-shirt/Joggers/cat will give away to minters. All Holders will have 20% off on our merchant store.</Typography>
+            <Typography variant="subtitle1" >We are streetwear based NFT, We will launch our merchant store right after the mint. and some of the merch is already in production and will be delivered on November. 400 pieces includes Hoodie/Sweater/T-shirt/Joggers/hat will give away to minters. All Holders will have 20% off on our merchant store.</Typography>
           </Grid >
 
           <Grid item xs={12}>
