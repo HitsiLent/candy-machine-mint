@@ -34,7 +34,7 @@ function CandyMainContent4(props) {
           component="img"
           style={{ width: "80%" }}
           image="/static/candy/download.png"
-          title="Contemplative Reptile"
+          title="Doo Doo"
         />
         {props.children}
       </Container>
