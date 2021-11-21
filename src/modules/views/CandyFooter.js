@@ -40,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.palette.warning.main,
     marginRight: theme.spacing(1),
     '&:hover': {
       backgroundColor: theme.palette.warning.dark,
@@ -99,11 +98,11 @@ export default function CandyFooter() {
           </Grid>
           <Grid item xs={6} sm={4} md={4}>
             <Grid item className={classes.icons} style={{ justifyContent: "center" }}>
-              <a href="https://facebook.com/doodoonft" className={classes.icon}>
-                <img src="/static/themes/onepirate/appFooterFacebook.png" alt="Facebook" />
+              <a href="https://discord.gg/z2HNzbbkPf" className={classes.icon}>
+                <img src="/static/candy/download-1.png" alt="Discord" />
               </a>
-              <a href="https://twitter.com/doodoonft" className={classes.icon}>
-                <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />
+              <a href="https://twitter.com/doodoo_nft" className={classes.icon}>
+                <img src="/static/candy/download-2.png" alt="Twitter" />
               </a>
             </Grid>
           </Grid>

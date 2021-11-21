@@ -91,7 +91,7 @@ export default function AppFooter() {
                 <a href="https://facebook.com/doodoonft" className={classes.icon}>
                   <img src="/static/themes/onepirate/appFooterFacebook.png" alt="Facebook" />
                 </a>
-                <a href="https://twitter.com/doodoonft" className={classes.icon}>
+                <a href="https://twitter.com/doodoo_nft" className={classes.icon}>
                   <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />
                 </a>
               </Grid>
