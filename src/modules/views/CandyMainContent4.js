@@ -32,8 +32,8 @@ function CandyMainContent4(props) {
       <Container className={classes.root} component="section">
         <CardMedia
           component="img"
-          style={{ width: "80%" }}
-          image="/static/candy/download.jpeg"
+          style={{ width: "90%" }}
+          image="/static/candy/download.png"
           title="Doo Doo"
         />
         {props.children}
