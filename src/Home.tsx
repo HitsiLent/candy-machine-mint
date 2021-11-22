@@ -9,7 +9,7 @@ import * as anchor from "@project-serum/anchor";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+import { WalletDialogButton, WalletDisconnectButton } from "@solana/wallet-adapter-material-ui";
 
 import {
   CandyMachine,
@@ -20,6 +20,8 @@ import {
 } from "./candy-machine";
 
 const ConnectButton = styled(WalletDialogButton)``;
+
+const DisconnectButton = styled(WalletDisconnectButton)``;
 
 const CounterText = styled.span``; // add your styles here
 
@@ -59,8 +61,6 @@ const Home = (props: HomeProps) => {
 
   const refreshCandyMachineState = () => {
     (async () => {
-      if (!wallet) return;
-
       const {
         candyMachine,
         goLiveDate,
@@ -167,33 +167,18 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+      {(
+        <p>Items Remain : {(itemsRemaining).toLocaleString()}/{(itemsAvailable).toLocaleString()}</p>
       )}
-
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
-
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
-
+      {(
+        <p>Sale Date : 11/25/2021 5PM PST(8PM EST)</p>
+      )}
+      {wallet && (
+        <p>Wallet: {(wallet.publicKey?.toString() || "")}</p>
+      )}
       <MintContainer>
         {!wallet ? (
-          <ConnectButton
-            color="secondary"
-            variant="contained"
-            size="large"
-            style={{
-              color: "black",
-              border: '4px solid currentColor',
-              borderRadius: 0,
-              height: 'auto',
-              marginTop: "-40px",
-              backgroundColor: "yellow",
-              padding: "2 5",
-            }}>Connect Wallet</ConnectButton>
+          <ConnectButton>Connect Wallet</ConnectButton>
         ) : (
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}
@@ -219,7 +204,7 @@ const Home = (props: HomeProps) => {
           </MintButton>
         )}
       </MintContainer>
-
+      <DisconnectButton disabled={!wallet}>Disconnect</DisconnectButton>
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
