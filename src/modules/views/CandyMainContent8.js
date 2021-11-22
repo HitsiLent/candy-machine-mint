@@ -73,7 +73,7 @@ export default function CandyMainContent10() {
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">When is the mint date?</Typography>
-            <Typography variant="subtitle1" >TBA, sometime in November</Typography>
+            <Typography variant="subtitle1" >11/25/2021 8PM EST</Typography>
           </Grid >
 
           <Grid item xs={12}>
