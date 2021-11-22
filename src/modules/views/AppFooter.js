@@ -88,11 +88,11 @@ export default function AppFooter() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://facebook.com/doodoonft" className={classes.icon}>
-                  <img src="/static/themes/onepirate/appFooterFacebook.png" alt="Facebook" />
+                <a href="https://discord.gg/z2HNzbbkPf" className={classes.icon}>
+                  <img src="/static/candy/download-1.png" alt="Discord" />
                 </a>
                 <a href="https://twitter.com/doodoo_nft" className={classes.icon}>
-                  <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />
+                  <img src="/static/candy/download-2.png" alt="Twitter" />
                 </a>
               </Grid>
               <Grid item>

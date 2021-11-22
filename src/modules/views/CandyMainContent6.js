@@ -60,7 +60,7 @@ export default function CandyMainContent6() {
             <Typography variant="h4" component="span">What are Doo Doos?
             </Typography>
             <Typography variant="subtitle1" >
-              Doo Doos are a collection of programmatically, randomly generated NFTs on the Solana blockchain. The 1st generation consists of 5,000 randomly assembled doodles from over 500k total options. Doo Doos have a variety of outfits, faces, colors and backgrounds - all doo doos are cool, but completed outfit doo doo are the coolest. Each Doo Doo is comprised of a unique body, hat, face and outfit - the possibilities are endless!
+              Doo Doos are a collection of programmatically, randomly generated NFTs on the Solana blockchain. The first drop generation consists of 5,000 randomly assembled doodles from over 500k total options. Doo Doos have a variety of outfits, faces, colors and backgrounds. Each Doo Doo has a unique body, hat, face and outfit. Some Doo Doos have their own unqiue streetwear apparels!
             </Typography>
           </Grid>
           <Grid item xs={6} sm={8} md={6}>

@@ -42,7 +42,7 @@ function CandyMainContent(props) {
           component="img"
           style={{ width: "50%" }}
           image="/static/candy/doodoogif.gif"
-          title="Contemplative Reptile"
+          title="Doo Doo"
         />
         {props.children}
       </Container>
