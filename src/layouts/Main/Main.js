@@ -39,7 +39,7 @@ const Main = ({ children }) => {
     }, {
       title: 'Store',
       id: 'store',
-      href: '#',
+      href: 'https://store.doodoonft.com/',
       children: []
     }
   ]
@@ -110,9 +110,9 @@ const Main = ({ children }) => {
         [classes.root]: true,
       })}
     >
-      <Topbar onSidebarOpen={handleSidebarOpen} 
-      navigation={navigation}
-      pages={pages} />
+      <Topbar onSidebarOpen={handleSidebarOpen}
+        navigation={navigation}
+        pages={pages} />
       <Sidebar
         onClose={handleSidebarClose}
         open={open}

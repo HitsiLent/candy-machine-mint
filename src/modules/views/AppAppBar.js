@@ -84,7 +84,7 @@ function AppAppBar(props) {
               underline="none"
               className={classes.rightLink}
               // className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="#"
+              href="https://store.doodoonft.com"
             >
               {'Store'}
             </Link>
