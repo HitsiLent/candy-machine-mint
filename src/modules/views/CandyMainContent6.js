@@ -64,7 +64,7 @@ export default function CandyMainContent6() {
             </Typography>
           </Grid>
           <Grid item xs={6} sm={8} md={6}>
-            <img src="/static/candy/download-4.png" style={{ width: "100%" }} alt="" />
+            <img src="/static/candy/walkcycle.gif" style={{ width: "100%" }} alt="" />
           </Grid>
         </Grid >
       </Container >

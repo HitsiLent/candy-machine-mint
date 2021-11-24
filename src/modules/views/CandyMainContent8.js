@@ -110,12 +110,7 @@ export default function CandyMainContent10() {
             <Typography variant="h4" component="span">What’s an NFT?</Typography>
             <Typography variant="subtitle1" >An NFT stands for “Non-fungible token” and it’s a unique, one of a kind digital item that users can buy, own, and trade.</Typography>
           </Grid >
-          <Grid container spacing={5}>
-            <Grid item xs={6} sm={8} md={3} />
-            <Grid item xs={6} sm={8} md={7}>
-              <img src="/static/candy/road.gif" style={{ width: "100%" }} alt="" />
-            </Grid>
-          </Grid>
+
         </Grid >
       </Container >
     </Typography >
