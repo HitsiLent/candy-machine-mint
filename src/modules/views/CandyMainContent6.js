@@ -56,14 +56,14 @@ export default function CandyMainContent6() {
     <Typography component="section" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item xs={6} sm={8} md={6} style={{ alignSelf: "center" }}>
+          <Grid item xs={12} sm={6} md={6} style={{ alignSelf: "center" }}>
             <Typography variant="h4" component="span">What are Doo Doos?
             </Typography>
             <Typography variant="subtitle1" >
               Doo Doos are a collection of programmatically, randomly generated NFTs on the Solana blockchain. The first drop generation consists of 5,000 randomly assembled doodles from over 500k total options. Doo Doos have a variety of outfits, faces, colors and backgrounds. Each Doo Doo has a unique body, hat, face and outfit. Some Doo Doos have their own unqiue streetwear apparels!
             </Typography>
           </Grid>
-          <Grid item xs={6} sm={8} md={6}>
+          <Grid item xs={12} sm={6} md={6}>
             <img src="/static/candy/walkcycle.gif" style={{ width: "100%" }} alt="" />
           </Grid>
         </Grid >
