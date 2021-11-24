@@ -5,18 +5,19 @@ import theme from './modules/theme';
 import React from 'react';
 import ProductCategories from './modules/views/ProductCategories';
 import ProductSmokingHero from './modules/views/ProductSmokingHero';
+import ProductHero from './modules/views/ProductHero';
+import ProductValues from './modules/views/ProductValues';
+import ProductHowItWorks from './modules/views/ProductHowItWorks';
+import ProductCTA from './modules/views/ProductCTA';
+import AppAppBar from './modules/views/AppAppBar';
 import AppFooter from './modules/views/CandyFooter';
 import CandyMainContent10 from './modules/views/CandyMainContent10'
 import CandyMainContent8 from './modules/views/CandyMainContent8'
 import CandyMainContent6 from './modules/views/CandyMainContent6'
 import CandyMainContent4 from './modules/views/CandyMainContent4'
 import CandyMainContent from './modules/views/CandyMainContent'
-import ProductHero from './modules/views/ProductHero';
-import ProductValues from './modules/views/ProductValues';
-import ProductHowItWorks from './modules/views/ProductHowItWorks';
-import ProductCTA from './modules/views/ProductCTA';
-import AppAppBar from './modules/views/AppAppBar';
 
+import { Main as MainLayout } from './layouts';
 
 import "./App.css";
 import { useMemo } from "react";
@@ -83,39 +84,28 @@ const App = () => {
           <ThemeProvider theme={theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
-            <React.Fragment>
-              <AppAppBar />
-              {/* <ProductHero>
-                <Home
-                  candyMachineId={candyMachineId}
-                  config={config}
-                  connection={connection}
-                  startDate={startDateSeed}
-                  treasury={treasury}
-                  txTimeout={txTimeout}
-                />
-              </ProductHero>
-              <ProductValues /> */}
-              {/* <ProductCategories /> */}
-              {/* <ProductHowItWorks /> */}
-              {/* <ProductCTA /> */}
-              {/* <ProductSmokingHero /> */}
-              <CandyMainContent>
-                <Home
-                  candyMachineId={candyMachineId}
-                  config={config}
-                  connection={connection}
-                  startDate={startDateSeed}
-                  treasury={treasury}
-                  txTimeout={txTimeout}
-                />
-              </CandyMainContent>
-              <CandyMainContent6 />
-              <CandyMainContent4 />
-              <CandyMainContent8 />
-              <CandyMainContent10 />
-              <AppFooter />
-            </React.Fragment>
+            <MainLayout>
+              <React.Fragment>
+                {/* <AppAppBar /> */}
+                <CandyMainContent>
+                  <Home
+                    candyMachineId={candyMachineId}
+                    config={config}
+                    connection={connection}
+                    startDate={startDateSeed}
+                    treasury={treasury}
+                    txTimeout={txTimeout}
+                  />
+                </CandyMainContent>
+                <CandyMainContent6 />
+                <CandyMainContent4 />
+                <CandyMainContent8 />
+                <CandyMainContent10 />
+                <AppFooter />
+              </React.Fragment>
+            </MainLayout>
+
+
           </ThemeProvider>
 
         </WalletDialogProvider>
