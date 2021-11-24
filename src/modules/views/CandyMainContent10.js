@@ -97,7 +97,7 @@ export default function CandyMainContent10() {
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 3</Typography>
-            <Typography variant="subtitle1" >400 Pieces(Hoodie/Tshirt/Hat/Joggers/Sweater) Will randomly drop to Minter (Color/Size NotGurantee)</Typography>
+            <Typography variant="subtitle1" >400 Pieces(Hoodie / Tshirt / Hat / Joggers / Sweater) Will randomly drop to Minter (Color / Size NotGurantee)</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 4</Typography>

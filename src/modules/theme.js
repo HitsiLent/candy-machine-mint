@@ -60,6 +60,9 @@ const theme = {
       placeholder: grey[200],
     },
   },
+  layout: {
+    contentWidth: 1280,
+  },
   typography: {
     ...rawTheme.typography,
     fontHeader,
