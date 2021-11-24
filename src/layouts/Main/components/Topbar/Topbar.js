@@ -12,6 +12,7 @@ import {
   Typography,
   IconButton,
   Button,
+  Link,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -114,7 +115,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...rest }) => {
+const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, navigation, className, ...rest }) => {
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -227,7 +228,55 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
       <div className={classes.flexGrow} />
       <Hidden smDown>
         <List disablePadding className={classes.navigationContainer}>
-          {[landings, supportedPages, account].map((page, i) => (
+          {navigation.map((page, i) => (
+            <div key={page.id}>
+              <ListItem
+                aria-describedby={page.id}
+                //onClick={e => handleClick(e, page.id)}
+                className={clsx(
+                  classes.listItem,
+                  openedPopoverId === page.id ? classes.listItemActive : '',
+                )}
+              >
+                <Typography
+                  variant="body1"
+                  color="textPrimary"
+                  className={clsx(classes.listItemText, 'menu-item')}
+                >
+                  <Link href="#">
+                    {page.title}
+                  </Link>
+                </Typography>
+                <ListItemIcon className={classes.listItemIcon}>
+                  {/* <ExpandMoreIcon
+                    className={
+                      openedPopoverId === page.id ? classes.expandOpen : ''
+                    }
+                    fontSize="small"
+                  /> */}
+                </ListItemIcon>
+              </ListItem>
+              {/* <Popover
+                elevation={1}
+                id={page.id}
+                open={openedPopoverId === page.id}
+                anchorEl={anchorEl}
+                onClose={handleClose}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'center',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'center',
+                }}
+                classes={{ paper: classes.popover }}
+              >
+                <div>{renderPages(page.id)}</div>
+              </Popover> */}
+            </div>
+          ))}
+          {/* {[landings, supportedPages, account].map((page, i) => (
             <div key={page.id}>
               <ListItem
                 aria-describedby={page.id}
@@ -272,7 +321,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
                 <div>{renderPages(page.id)}</div>
               </Popover>
             </div>
-          ))}
+          ))} */}
         </List>
       </Hidden>
       <Hidden mdUp>

@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const SidebarNav = props => {
-  const { pages, onClose, className, ...rest } = props;
+  const { pages, onClose, className, navigation, ...rest } = props;
   const classes = useStyles();
 
   const landings = pages.landings;
@@ -135,6 +135,26 @@ const SidebarNav = props => {
         </ListItemIcon>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <div className={classes.menu}>
+          <div className={classes.menuItem}>
+            {navigation.map((page, i) => (
+              <ListItem disableGutters key={i} className={classes.menuGroupTitle}>
+                <Typography
+                  variant="body2"
+                  component={'a'}
+                  href={page.href}
+                  className={clsx(classes.navLink, 'submenu-item')}
+                  color="textPrimary"
+                  onClick={() => onClose()}
+                >
+                  {page.title}
+                </Typography>
+              </ListItem>
+            ))}
+          </div>
+        </div>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
         <Typography variant="h6" color="textPrimary" gutterBottom>
           Landings
         </Typography>
@@ -157,28 +177,6 @@ const SidebarNav = props => {
           Account
         </Typography>
         <AccountPages />
-      </ListItem>
-      {/* <ListItem className={classes.listItem}>
-        <Button
-          variant="outlined"
-          fullWidth
-          component="a"
-          href="/documentation"
-        >
-          Documentation
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          component="a"
-          target="blank"
-          href="https://material-ui.com/store/items/the-front-landing-page/"
-        >
-          Buy Now
-        </Button>
       </ListItem> */}
     </List>
   );
