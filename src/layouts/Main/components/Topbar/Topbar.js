@@ -243,7 +243,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, navigation, cla
                   color="textPrimary"
                   className={clsx(classes.listItemText, 'menu-item')}
                 >
-                  <Link href="#">
+                  <Link href={page.href}>
                     {page.title}
                   </Link>
                 </Typography>
