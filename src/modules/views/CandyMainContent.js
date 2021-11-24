@@ -37,7 +37,7 @@ function CandyMainContent(props) {
 
   return (
     <Typography component="section" className={classes.root}>
-      <Container className={classes.root} component="section">
+      <Container className={classes.root} style={{ textAlign: "center" }} component="section">
         <CardMedia
           component="img"
           style={{ width: "50%" }}
