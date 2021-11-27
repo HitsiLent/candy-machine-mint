@@ -79,13 +79,8 @@ export default function CandyMainContent10() {
     <Typography component="section" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid container spacing={5}>
-            <Grid item xs={6} sm={8} md={3}>
-
-            </Grid>
-            <Grid item xs={6} sm={8} md={7}>
-              <img src="/static/candy/roadmap.png" alt="" />
-            </Grid>
+          <Grid item xs={12} style={{ textAlign: "center" }}>
+            <img src="/static/candy/roadmap.png" alt="" />
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 1</Typography>
