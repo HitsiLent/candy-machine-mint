@@ -214,9 +214,9 @@
 
 
 .MuiDialogTitle-root {
-  background-color: #ffc5c4;
+  background-color: #ffc5c4 !important;
 }
 
 .MuiButton-root {
-  color: #3688e6;
+  color: #3688e6 !important;
 }
