@@ -171,7 +171,7 @@ const Home = (props: HomeProps) => {
         <p>Items Remain : {(itemsRemaining).toLocaleString()}/{(itemsAvailable).toLocaleString()}</p>
       )}
       {(
-        <p>Sale Date : 11/25/2021 5PM PST(8PM EST)</p>
+        <p>Sale Date : 11/26/2021 5PM PST(8PM EST)</p>
       )}
       {wallet && (
         <p>Wallet: {(wallet.publicKey?.toString() || "")}</p>
