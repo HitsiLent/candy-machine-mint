@@ -69,7 +69,7 @@ export default function CandyMainContent10() {
       <Container className={classes.container}>
         <Grid container spacing={5}>
           <Grid item xs={12}>
-            <Typography variant="h1" component="span">FAQ</Typography>
+            <Typography id="faq" variant="h1"  component="span">FAQ</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">When is the mint date?</Typography>

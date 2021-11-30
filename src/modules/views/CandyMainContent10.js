@@ -79,7 +79,7 @@ export default function CandyMainContent10() {
     <Typography component="section" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item xs={12} style={{ textAlign: "center" }}>
+          <Grid item xs={12} id="roadmap" style={{ textAlign: "center" }}>
             <img src="/static/candy/roadmap.png" alt="" />
           </Grid>
           <Grid item xs={12}>

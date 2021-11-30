@@ -57,7 +57,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="#"
+              href={classes.href}
             >
               {'About'}
             </Link>
@@ -66,7 +66,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="#"
+              href={classes.href}
             >
               {'Faq'}
             </Link>
@@ -75,7 +75,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="#"
+              href={classes.href}
             >
               {'Roadmap'}
             </Link>

@@ -23,18 +23,18 @@ const Main = ({ children }) => {
     {
       title: 'About',
       id: 'about',
-      href: '#',
+      href: '#about',
       children: []
     },
     {
       title: 'FAQ',
       id: 'faq',
-      href: '#',
+      href: '#faq',
       children: []
     }, {
       title: 'Roadmap',
       id: 'roadmap',
-      href: '#',
+      href: '#roadmap',
       children: []
     }, {
       title: 'Store',
