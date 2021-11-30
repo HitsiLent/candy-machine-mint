@@ -88,7 +88,7 @@ export default function CandyMainContent10() {
 
           <Grid item xs={12}>
             <Typography variant="h4" component="span">What is Mint Price?</Typography>
-            <Typography variant="subtitle1" >Mint Price will be 0.5 Sol</Typography>
+            <Typography variant="subtitle1" >Mint Price will be 0.1 Sol</Typography>
           </Grid >
 
           <Grid item xs={12}>
