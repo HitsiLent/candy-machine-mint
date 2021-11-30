@@ -78,10 +78,11 @@ const App = () => {
   );
 
   return (
-    <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect={true}>
-        <WalletDialogProvider>
-          <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <ConnectionProvider endpoint={endpoint}>
+        <WalletProvider wallets={wallets} autoConnect={true}>
+          <WalletDialogProvider>
+
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             <MainLayout>
@@ -106,11 +107,12 @@ const App = () => {
             </MainLayout>
 
 
-          </ThemeProvider>
 
-        </WalletDialogProvider>
-      </WalletProvider>
-    </ConnectionProvider>
+
+          </WalletDialogProvider>
+        </WalletProvider>
+      </ConnectionProvider>
+    </ThemeProvider>
   );
 };
 
