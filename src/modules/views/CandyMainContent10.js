@@ -84,7 +84,7 @@ export default function CandyMainContent10() {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 1</Typography>
-            <Typography variant="subtitle1" >Prepare Merch store and Generate 5000 DooDoo NFT</Typography>
+            <Typography variant="subtitle1" >Prepare Merch store and Generate 999 DooDoo NFT</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 2</Typography>

@@ -168,7 +168,7 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       {(
-        <p>Items Remain : {(itemsRemaining).toLocaleString()}/{(itemsAvailable).toLocaleString()}</p>
+        <p>Items Remain : {(itemsRemaining - 4001).toLocaleString()}/{(itemsAvailable - 4001).toLocaleString()}</p>
       )}
       {(
         <p>Sale Date : 11/26/2021 5PM PST(8PM EST)</p>
