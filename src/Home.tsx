@@ -78,6 +78,7 @@ const Home = (props: HomeProps) => {
       setItemsRedeemed(itemsRedeemed);
 
       setIsSoldOut(itemsRemaining === 0);
+      setIsSoldOut(true);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
     })();
@@ -168,7 +169,7 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       {(
-        <p>Items Remain : {(itemsRemaining - 4001).toLocaleString()}/{(itemsAvailable - 4001).toLocaleString()}</p>
+        <p>Soldout</p>
       )}
       {(
         <p>Sale Date : 11/26/2021 5PM PST(8PM EST)</p>
