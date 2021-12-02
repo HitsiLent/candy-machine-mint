@@ -83,25 +83,60 @@ export default function CandyMainContent10() {
             <img src="/static/candy/roadmap.png" alt="" />
           </Grid>
           <Grid item xs={12}>
+            <Typography variant="h4" component="span">Preparation Phase</Typography>
+            <Typography variant="subtitle1" >✅ Create Twitter Account, Discord Account</Typography>
+          </Grid >
+          <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 1</Typography>
-            <Typography variant="subtitle1" >Prepare Merch store and Generate 999 DooDoo NFT</Typography>
+            <Typography variant="subtitle1" >✅ Prepare Merch store and Generate 999 DooDoo NFT</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 2</Typography>
-            <Typography variant="subtitle1" >Launch DooDoo NFT and Drop our Merch Store after NFT launch</Typography>
+            <Typography variant="subtitle1" >✅ Verified on AlphaArt ☑️ Verified on ME</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 3</Typography>
-            <Typography variant="subtitle1" >400 Pieces(Hoodie / Tshirt / Hat / Joggers / Sweater) Will randomly drop to Minter (Color / Size NotGurantee)</Typography>
+            <Typography variant="subtitle1" >✅ Mint DooDoo NFT</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 4</Typography>
-            <Typography variant="subtitle1" >More collection Merch will be designed and sell on our website, and will be looking for other projects to collab some merchs</Typography>
+            <Typography variant="subtitle1" >☑️ Discord Sales Bot</Typography>
           </Grid >
           <Grid item xs={12}>
             <Typography variant="h4" component="span">Phase 5</Typography>
-            <Typography variant="subtitle1" >Donate merch & funds to charity spread the ❤️
-              ALL holder will get 20% off of our merch store
+            <Typography variant="subtitle1" >☑️ Launch our Merch Store</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 6</Typography>
+            <Typography variant="subtitle1" >☑️  400 Pieces(Hoodie / Tshirt / Hat / Joggers / Sweater) Will randomly drop to Minter (Color / Size NotGurantee)</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 7</Typography>
+            <Typography variant="subtitle1" >☑️  DoDoo Lore</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 8</Typography>
+            <Typography variant="subtitle1" >☑️  DooDoo Comic</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 9</Typography>
+            <Typography variant="subtitle1" >☑️  Twitter & Discord Giveaways</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 10</Typography>
+            <Typography variant="subtitle1" >☑️  Project Partnerships+Collabs</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 11</Typography>
+            <Typography variant="subtitle1" >☑️  More collection Merch will be designed and sell on our website</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">Phase 12</Typography>
+            <Typography variant="subtitle1" >☑️ Donate merch & funds to charity spread the ❤️</Typography>
+          </Grid >
+          <Grid item xs={12}>
+            <Typography variant="h4" component="span">NFT Holder Discount</Typography>
+            <Typography variant="subtitle1" >ALL holder will get 20% off of our merch store
               Every new collection released, we will do giveaway to the community</Typography>
           </Grid >
         </Grid >

@@ -169,55 +169,8 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       {(
-        <p>Soldout</p>
+        <p>SOLDOUT</p>
       )}
-      {(
-        <p>Sale Date : 11/26/2021 5PM PST(8PM EST)</p>
-      )}
-      {wallet && (
-        <p>Wallet: {(wallet.publicKey?.toString() || "")}</p>
-      )}
-      <MintContainer>
-        {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
-        ) : (
-          <MintButton
-            disabled={isSoldOut || isMinting || !isActive}
-            onClick={onMint}
-            variant="contained"
-          >
-            {isSoldOut ? (
-              "SOLD OUT"
-            ) : isActive ? (
-              isMinting ? (
-                <CircularProgress />
-              ) : (
-                "MINT"
-              )
-            ) : (
-              <Countdown
-                date={startDate}
-                onMount={({ completed }) => completed && setIsActive(true)}
-                onComplete={() => setIsActive(true)}
-                renderer={renderCounter}
-              />
-            )}
-          </MintButton>
-        )}
-      </MintContainer>
-      <DisconnectButton disabled={!wallet}>Disconnect</DisconnectButton>
-      <Snackbar
-        open={alertState.open}
-        autoHideDuration={6000}
-        onClose={() => setAlertState({ ...alertState, open: false })}
-      >
-        <Alert
-          onClose={() => setAlertState({ ...alertState, open: false })}
-          severity={alertState.severity}
-        >
-          {alertState.message}
-        </Alert>
-      </Snackbar>
     </main>
   );
 };
